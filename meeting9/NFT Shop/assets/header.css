@@ -1,0 +1,55 @@
+.main-header {
+    background-image: linear-gradient(rgb(197, 141, 137), rgb(252, 232, 204));
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.header-welcome {
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #D4AF37;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.header-info {
+    text-align: left;
+    color: rgb(219, 84, 75);
+    padding: 0;
+    margin: 0 14px;
+    white-space: nowrap;
+}
+
+.header-info a {
+    padding: 0;
+    text-decoration: none;
+}
+
+.header-info a:hover {
+    background-color: transparent;
+}
+
+nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding: 15px;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: burlywood;
+}

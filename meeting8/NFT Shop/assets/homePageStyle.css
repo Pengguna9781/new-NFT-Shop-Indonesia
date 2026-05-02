@@ -1,0 +1,311 @@
+/* ── Base reset ────────────────────────────────────── */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('BoredApes/boredApesBackground.png');
+    background-size: cover;
+    margin: 0;
+    padding-top: 48px;
+}
+
+/* ── Typography ────────────────────────────────────── */
+h1, h2, h3, p {
+    text-align: center;
+    color: rgb(0,0,0);
+}
+
+h2 {
+    color: black;
+    text-align: center;
+}
+
+h3, p {
+    text-align: center;
+    padding: 5px;
+    color: black;
+}
+
+/* ── Utility classes ───────────────────────────────── */
+.first {
+    background-color: cornflowerblue;
+}
+
+.second {
+    margin: 30px;
+    background-color: cornflowerblue;
+    border: 2px solid lightgreen;
+    padding: 5px;
+}
+
+.important {
+    color: red;
+    background-color: black;
+}
+
+.fancy {
+    text-shadow: 2px 3px 3px green;
+}
+
+.title {
+    font-style: italic;
+    color: rgb(0,0,0);
+}
+
+/* ── Header / Nav ──────────────────────────────────── */
+
+/* FIX: was .main — HTML uses class="main-header" */
+.main-header {
+    background-image: linear-gradient(rgb(197, 141, 137), rgb(252, 232, 204));
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.header-welcome {
+    border: 2px solid black;
+    padding: 20px;
+    background-color: #D4AF37;
+    width: 300px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.header-info {
+    text-align: left;
+    color: rgb(219, 84, 75);
+    padding: 0;
+    margin: 0 14px;
+    white-space: nowrap;
+}
+
+.header-info a {
+    padding: 0;
+    text-decoration: none;
+}
+
+.header-info a:hover {
+    background-color: transparent;
+}
+
+nav {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(0,0,0);
+    padding: 15px;
+    display: inline-block;
+}
+
+a:hover {
+    background-color: burlywood;
+}
+
+/* ── Images ────────────────────────────────────────── */
+img {
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border: 20px solid goldenrod;
+    border-radius: 8px;
+    box-shadow: 5px 5px 5px black;
+    opacity: 0.5;
+}
+
+img:hover {
+    opacity: 1;
+}
+
+.landscape {
+    width: 350px;
+    max-width: 100%;
+    height: auto;
+}
+
+/* ── Product items ─────────────────────────────────── */
+.items {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 10px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    width: 220px;
+    background-color: gold;
+}
+
+/* ── About section ─────────────────────────────────── */
+section.cover {
+    background-image: url('BoredApes/boredApesbackground.png');
+    background-size: cover;
+}
+
+div.about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 5px auto 30px;
+    background-color: #D4AF37;
+    width: 80%;
+}
+
+.about {
+    text-align: left;
+    color: black;
+    padding: 10px;
+    flex: 1;
+    min-width: 200px;
+}
+
+div.image-about {
+    margin: auto;
+    padding: 10px;
+}
+
+img.about-us {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: none;
+    opacity: 1;
+}
+
+/* ── Footer ────────────────────────────────────────── */
+footer {
+    background-image: linear-gradient(rgb(252, 232, 204), rgb(197, 141, 137));
+}
+
+.main-footer {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.left-footer {
+    margin-right: auto;
+    margin-left: 40px;
+}
+
+.right-footer {
+    margin-left: auto;
+    margin-right: 40px;
+}
+
+.center-footer {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.info-left {
+    color: rgb(219, 84, 75);
+    text-align: left;
+    width: 100%;
+}
+
+.info-right {
+    color: rgb(219, 84, 75);
+    text-align: right;
+    width: 100%;
+}
+
+.info-center {
+    color: rgb(219, 84, 75);
+    text-align: center;
+    width: 100%;
+    padding-top: 5px;
+    border-top: 1px solid rgb(146, 168, 133);
+}
+
+/* ── Mobile ────────────────────────────────────────── */
+@media (max-width: 600px) {
+    body {
+        /* increases as nav wraps into multiple rows */
+        padding-top: 96px;
+    }
+
+    /* FIX: was .main */
+    .main-header {
+        height: auto;
+        min-height: 48px;
+        flex-wrap: wrap;
+        align-items: center;
+        position: fixed;
+    }
+
+    .header-info {
+        flex: 0 0 auto;
+        padding: 8px 14px;
+    }
+
+    nav {
+        margin-left: 0;
+        flex-wrap: wrap;
+        width: 100%;
+        border-top: 1px solid rgba(0,0,0,0.1);
+    }
+
+    nav a {
+        padding: 10px 12px;
+        font-size: 13px;
+        flex: 1 1 auto;
+        text-align: center;
+    }
+
+    .header-welcome {
+        width: 90%;
+    }
+
+    img {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        border-width: 8px;
+    }
+
+    .items {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 8px;
+    }
+
+    .item {
+        width: 100%;
+        margin: 8px 0;
+    }
+
+    div.about {
+        flex-direction: column;
+        width: 95%;
+    }
+
+    .left-footer,
+    .right-footer {
+        margin: 0 10px;
+        width: 100%;
+    }
+
+    .info-right {
+        text-align: left;
+    }
+}
