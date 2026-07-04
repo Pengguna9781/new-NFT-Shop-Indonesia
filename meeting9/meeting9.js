@@ -39,7 +39,7 @@ let innerHTMLexample = document.getElementById("example-id").innerHTML = "Hello 
 //Property attribute digunakan untuk mengubah atribut pada elemen seperti id, type, class, dll.
 //Contoh: 
 let  changeAttributeExample = document.getElementById("example-id").className="blue"
-
+getElements
 //style
 //style.property digunakan untuk mengubah properti tertentu pada elemen.
 //Contoh:
@@ -64,3 +64,33 @@ paragraph.innerHTML = "New Paragraph";
 
 //appendChild
 document.body.appendChild(paragraph);
+
+
+//Remove Element
+//Contoh:
+document.body.removeChild(paragraph)
+//Contoh:
+
+
+//childNodes
+//Kita bisa juga menghapus salah satu child dari sebuah Parent element menggunakan properti childNodes[index]. 
+// Property childNodes menampung semua child yang dimiliki parent element.
+//Contoh:
+//Liat meeting9.html untuk melihat HTMLnya
+let list = document.getElementById("language");
+list.removeChild(list.childNodes[1])
+
+
+//querySelector()
+//querySelector() adalah metode digunakan untuk mendapatkan
+//atribut pertama dari pemilih yang disebutkan. 
+//Contoh:
+document.querySelector("p")
+document.querySelector(".class") // class
+document.querySelector("#id") // id
+document.querySelector("p.class") // Elemen dengan class title
+
+
+//querySelectorAll()
+//Masih termasuk dalam metode querySelector(), metode querySelectorAll() digunakan untuk mendapatkan semua atribut dengan nilai pemilih yang ditentukan.
+document.querySelectorAll("p")

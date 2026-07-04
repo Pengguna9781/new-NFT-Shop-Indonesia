@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>meeting13</title>
+    <link rel="stylesheet" href="meeting13.css">
+</head>
+<body>
+    <!-- Types of Input -->
+    <h3>Types of Input</h3>
+    <form>
+    <label for="text">Text</label><br>
+    <input type="text"><br>
+
+    <label for="password">Password</label><br>
+    <input id="password" type="password" name="password"><br>
+
+    <label for="number">Number</label><br>
+    <input id="number" type="number" name="number"><br>
+
+    <label for="email">Email</label><br>
+    <input id="email" type="email" name="email"><br>
+
+    <label for="date">Date</label><br>
+    <input id="date" type="date" name="date"><br>
+    <pre>
+
+    </pre>
+    <input id="checkbox" type="checkbox" name="checkbox"><label id="checkbox" type="checkbox" name="checkbox1" value="veteran">Checkbox</label><br>
+    <pre>
+
+    </pre>
+    <input id="radio" type="radio" name="language" value="HTML"><label for="radio">HTML</label><br>
+    <input id="radio" type="radio" name="language" value="CSS"><label for="radio">CSS</label><br>
+    <input id="radio" type="radio" name="language" value="Javascript"><label for="radio">Javascript</label><br>
+    <pre>
+
+    </pre>
+    <label for="file">Upload Files</label><br>
+    <input id="file" type="file" name="file">
+    </form>
+
+
+    <!-- Attribute on Input -->
+    <!-- Value -->
+    <!-- Atribut value adalah nilai data yang dimasukkan pada kolom input. -->
+    <!-- Contoh -->
+    <label for="text">Value</label><br>
+    <input type="radio" name="language" value="HTML"><label for="text">HTML</label><br><br>
+
+    <!-- Placeholder -->
+    <!-- Pada umumnya digunakan untuk menunjuk contoh dalam tipe input teks -->
+    <!-- Contoh -->
+    <label for="text">Placeholder</label><br>
+    <input type="text" name="language" placeholder="e.g Javascript"><br><br>
+
+    <!-- Required -->
+    <!-- Atribut required digunakan untuk menandakan bahwa teks, radio, checkbox atau input lain sebagainya harus di-isi -->
+    <!-- Contoh -->
+    <label for="text">Required</label><br>
+    <input type="text" name="language" placeholder="e.g Javascript" required><br><br>
+
+    <!-- Autofocus -->
+    <!-- Atribut autofocus digunakan agar secara otomatis meletakkan cursor pada kolom input saat halaman dibuka. -->
+    <!-- Contoh -->
+    <label for="text">Autofocus </label><input type="text" name="username" autofocus><br><br>
+
+    <!-- Readonly -->
+    <!-- Input hanya bisa dibaca, di copy dan di klik, akan tetapi tidak bisa memasukkan/mengubah data di dalamnya -->
+    <!-- Contoh -->
+    <label>Readonly </label><input type="text" name="name" value="Rich Brian" readonly><br><br>
+
+    <!-- Disabled -->
+    <!-- Atribut disabled menandakan bahwa input di non-aktifkan, artinya tidak bisa di edit dan di klik, tapi masih bisa di copy. Pada umumnya digunakan pada data yang tidak bisa diubah sejak pertam kali input, misalnya data Username atau data sensitif lainnya-->
+    <!-- Contoh -->
+    <label>Name </label><input type="text" name="name" value="Rich Brian" disabled><br><br>
+
+    <!-- Min and Max -->
+    <!-- Atribut min dan max juga bisa digunakan untuk mengatur nilai minimal dan maksimal pada input tipe date. -->
+    <label>date </label><input type="date" name="date" min="2021-01-01" max="2021-01-31"><br><br>
+
+    <!-- Multiple -->
+    <label type="files">files</label><br>
+    <input type="file" name="file" id="files" multiple>
+
+
+
+
+
+
+
+
+
+    <script src="meeting13.js"></script>
+</body>
+</html>
+
+
+
+

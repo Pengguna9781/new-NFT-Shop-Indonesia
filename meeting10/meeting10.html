@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>meeting10</title>
+</head>
+<body>
+    <button onclick="playMusic()">Play Music</button>
+    <!-- Mouse Events -->
+    <!-- Event	        Description
+    onclick	            Event onclick adalah event ketika suatu elemen di klik satu kali.
+    ondblclick	        Event ondblclick adalah event ketika suatu elemen di klik dua kali.
+    onmouseover	        Event onmouseover adalah event ketika mouse diarahkan ke atas elemen.
+    onmouseout	        Event onmouseout adalah event setelah mouse berada di luar elemen.
+    onmousedown	        Event onmousedown adalah event ketika mouse sedang menekan elemen (klik lalu tahan)
+    onmouseup	        Event onmouseup adalah event ketika mouse sudah tidak menekan elemen. -->
+
+    <!-- Windows Event -->
+    <!-- Event	        Description
+    onload	            Event onload adalah event ketika masuk halaman web.
+    onunload	        Event onunload adalah event ketika keluar halaman web.
+    onscroll	        Event onscroll adalah event ketika halaman web di scroll.
+    onresized	        Event onresized adalah event ketika halaman web berubah ukuran. -->
+
+    <!-- Keyboarad Event -->
+    <!-- Event	        Description
+    onkeypress	        Event onkeypress adalah event ketika suatu keyboard sedang ditekan.
+    onkeydown	        Event onkeydown adalah event ketika suatu keyboard ditekan.
+    onkeyup	            Event onkeyup adalah event ketika suatu keyboard dilepaskan. -->
+
+
+    <!-- Dynamic Object Manipulation Event Listener -->
+    <!--DOM Event Listeners adalah event dengan kode addEventListener yang mengecek jika ada sebuah event yang terjadi. 
+    Contoh jika Tagname h1 pergantian. Akan dideteksi oleh addEventListener. -->
+    <!-- Contoh: -->
+    <button class="dasButton">Event Listener</button>
+    <script>
+        let button = document.querySelector("button2");
+        function alert() {
+            alert('Hello World')
+        }
+        function consoleLog() {
+            console.log("hello world!")
+        }
+        button.addEventListener("click", alert())
+        button.addEventListener("click", consoleLog())
+    </script>
+    <script src="meeting10.js"></script>
+</body>
+</html>
+
+
+<!-- Jumbotron -->
+<header>
+    <div class="header">
+        <div class="header-brand">
+            <img class="header-icon" src="assets/header-icon.png" alt="Cobee The Coder Logo" />
+            <h3 class="title"><a href="index.html">Cobee The Coder</a></h3>
+        </div>
+        
+        <nav>
+            <a href="project.html">Project</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section id="jumbotron">
+        <div class="jumbotron">
+            <h1 class="jumbotron-title">Dapatkan Tips Programming Disini!</h1>
+            
+            <div class="header-flex">
+                <div class="jumbotron-content-left">
+                    <h2 class="jumbotron-text">
+                        Baru di dunia Programming? <br> 
+                        Belajar lewat pengembangan <span style="color: #f4a261;">dasar</span>
+                    </h2>
+                    
+                    <div class="mini-text-flex">
+                        <p class="mini-text">Belajar programming dasar disini</p>
+                        
+                        <button id="icon-up" type="button">
+                            <i class="far fa-hand-point-up"></i>
+                        </button>
+                        
+                        <button id="icon-down" class="icon-down" type="button">
+                            <i class="far fa-hand-point-down"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="jumbotron-content-right">
+                    <img class="jumbotron-img" src="assets/img-header.png" alt="Ilustrasi Programming" width="auto" height="300">
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+

@@ -1,0 +1,5 @@
+/* General Sibling Selector */
+/* Template */
+selector1 ~ selector2 {
+    property: value;
+}
