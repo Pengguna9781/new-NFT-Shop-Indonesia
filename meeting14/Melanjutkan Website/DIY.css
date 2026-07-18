@@ -1,0 +1,118 @@
+/* General Sibling Selector */
+h3 ~ p {
+    color: black;
+}
+
+/* Adjacent Sibling */
+h1 + p {
+    color: green;
+}
+
+/* Child Selector */
+div > p {
+    color: black;
+}
+
+/* Psuedo Class for Links */
+a:link {
+    color: blue;
+}
+
+a:visited {
+    color: red;
+}
+
+/* Psuedo class for User Action & Input */
+
+input[type=number]:placeholder-shown {
+    background-color: bizque;
+}
+
+input:enabled {
+    background-color: white;
+}
+
+input:disabled {
+    background-color: coral;
+}
+
+/* Psuedo class for Not */
+* {
+    color: black;
+}
+
+:not(label) {
+    color: brown;
+}
+
+/* Melanjutkan Website */
+.contact-container {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.ilustration-img {
+    margin: 0px;
+    width: 300px;
+}
+
+.contact {
+    display: inline-block;
+    margin: 10px 30px;
+    text-align: center;
+}
+
+/* Form */
+/* .form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.input-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.icon {
+    margin-right: 6px;
+} */
+
+.fa-user, .fa-map-maker-alt, .fa-envelope-open, .fa-comment {
+    font-size: 27px;
+}
+
+/* .form-label {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+} */
+
+/* .submit {
+    border-style: none;
+    border-radius: 25px;
+    color: black;
+    background-color: rgb(38, 70, 83);
+    margin: 5px;
+    cursor: pointer;
+} */
+
+.input-item:focus + .form-label {
+    top: -5px;
+    left: -2px;
+    font-size: 10px;
+}
+
+.textarea:focus + .form-label {
+    top: -5px;
+    left: -2px;
+    font-size: 10px
+}
+
+.input-item:not(:placeholder-shown).input-item:not(:focus) + .form-label {
+    top: -2px;
+    left: -2px;
+    font-size: 10px;
+    color: rgb(138, 130, 130);
+}
