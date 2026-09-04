@@ -1,0 +1,9 @@
+.sanae {
+    transition: margin-left 3s ease-in 1s;
+    height: 100px;
+    width: auto;
+}
+
+.sanae:hover {
+    margin-left: 300px;
+}

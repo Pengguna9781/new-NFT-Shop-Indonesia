@@ -1,2 +1,3 @@
-let list = document.getElementById("language");
-list.removeChild(list.childNodes[Math.floor(Math.random(0,2))])
+const slide = document.querySelectorAll(".slide")[0]
+
+console.log(slide.textContent)

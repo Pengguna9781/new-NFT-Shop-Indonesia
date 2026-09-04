@@ -8,3 +8,5 @@ button.addEventListener("click", function(){
     console.log("Hello Programmer!")
 });
 
+const slide = document.querySelectorAll(".slide")
+

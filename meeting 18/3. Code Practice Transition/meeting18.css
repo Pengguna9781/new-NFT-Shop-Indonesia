@@ -1,0 +1,41 @@
+.container {
+    width: 80%;
+    margin-bottom: 10px;
+    background-color: #63b686;
+}
+
+.sanae {
+    width: 50px;
+    transition: 3s;
+}
+
+.container:hover .sanae {
+    width: 60px;
+    margin-left: 200px;
+}
+
+@keyframes blobAnimation {
+    0% {
+        margin-left: 0;
+        margin-top: 0;
+    }
+    25% {
+        margin-left: 100px;
+        margin-top: 0;
+    }
+    50% {
+        margin-left: 100px;
+        margin-top: 80px;
+    }
+    100% {
+        margin-left: 100px;
+        margin-top: 200px;
+    }
+}
+
+.blob {
+    animation: blobAnimation 3s;
+    width: 150px;
+    height: auto;
+}
+
